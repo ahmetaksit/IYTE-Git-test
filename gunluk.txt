@@ -1,0 +1,29 @@
+[*]06.03.2014 : VMware 10 üzerine Ubuntu 13.10 kuruldu.
+[*]07.03.2014 : linux.sh ile rails kuruldu.
+kurulum ile ilgili notlar railskurulum/readme.txt dosyasına kayıt edildi. 
+~ sudo apt-get upgrade
+~ sudo apt-get install git-flow
+
+[*]10.03.2014 : github "Generating SSH Keys" ayarları yapıldı.
+Global Git Ayarları yapıldı.
+web adresi : http://git-scm.com/book/tr/Customizing-Git-Git-Configuration
+~ git config --global user.name "Ahmet AKSIT" 
+~ git config --global user.email ahmetaksit@gmail.com
+
+web adresi : https://help.github.com/articles/generating-ssh-keys
+yeni SSH Key tanımlaniyor..
+~ ssh-keygen -t rsa -C "ahmetaksit@gmail.com" 
+xclip kuruluyor...
+~ sudo apt-get install xclip
+yeni anahtarı belle kopyalaniyor..
+~ xclip -sel clip < ~/.ssh/id_rsa.pub
+bağlantı testi yapılıyor.
+~ ssh -T git@github.com
+
+[*]11.03.2014 : git denemeleri
+~ git clone https://github.com/ahmetaksit/IYTE-Git-test.git
+~ git flow init
+~ git status
+
+
+
